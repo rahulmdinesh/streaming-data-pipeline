@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 5. Start the containers using Docker Compose
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 6. Launch the Airflow Web UI to trigger DAG runs
@@ -61,3 +61,17 @@ docker exec -it cassandra cqlsh -u cassandra -p cassandra localhost 9042
 select * from spark_stream.users;
 select count(*) from spark_stream.users;
 ```
+
+## Screenshots
+Apache Airflow Web UI:
+<img width="1728" height="872" alt="image" src="https://github.com/user-attachments/assets/bdeddebb-db72-46ae-879d-5158c43270bd" />
+
+Apache Kafka Web UI:
+<img width="1728" height="872" alt="image" src="https://github.com/user-attachments/assets/31542177-f3d7-41a0-ba99-6619013b080f" />
+
+
+Executing CQL queries in the Cassandra docker container:
+<img width="1728" height="992" alt="image" src="https://github.com/user-attachments/assets/47a28591-82f5-4b46-9045-b6c9855d2188" />
+
+
+
